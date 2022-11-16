@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(30, 73, 51);
+}
+
+::selection {
+    color: rgb(69, 114, 103);
+    background: rgba(255, 255, 255, 0.671);
+}
+
+.setup {
+    background-color: rgb(18, 65, 41);
+    border: solid;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.voitto {
+    display: flex;
+    background-color: rgb(18, 65, 41);
+    border: solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.nopat {
+    display: flex;
+    justify-content: center;
+}
+
+.noppa{
+    margin: 15px;
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    background-color: black;
+}
+
+.pisteet{
+    font-size: 30px;
+}
+
+p {
+    color: white;
+}
+h1{
+    color: white;
+}
+
+
+.pelaa1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: rgb(18, 65, 41);
+    width: 80px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.pelaa1:hover{
+    background-color: rgb(38, 141, 115);
+}
+
+.vuoro1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    background-color: rgb(18, 65, 41);
+    width: 80px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.vuoro1:hover {
+    background-color: rgb(38, 141, 115);
+}
+
+.peli1{
+    display: flex;
+    justify-content: center;
+}
+
+.yksinoppa {
+    background-color: rgb(18, 65, 41);
+    border: solid;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.kaksinoppaa{
+    background-color: rgb(18, 65, 41);
+    border: solid;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+
+.pelaajat {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.nimet {
+    background-color: rgb(41, 95, 62);
+    border: solid black;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+.pelimuodot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.peli-item{
+    padding: 10px;
+    transition: 0.4s;
+}
+.peli-item:hover{
+    cursor: pointer;
+    color: rgb(38, 141, 115);
+}

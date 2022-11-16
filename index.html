@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="setup" id="setup">
+        <h1>Valitse Pelimuoto</h1>
+        <p style="font-size: 30px;">Pelaajien nimet:</p>
+        <div class="pelaajat">
+            <input type="text" id="pelaaja1" class="nimet" placeholder="Pelaaja 1...">
+            <input type="text" id="pelaaja2" class="nimet" placeholder="Pelaaja 2...">
+        </div>
+        <div class="pelimuodot">
+            <p class="peli-item" onclick="yksinoppa()">Yksi Noppa</p>
+            <p>|</p>
+            <p class="peli-item" onclick="kaksinoppaa()">Kaksi Noppaa</p>
+        </div>
+    </div>
+
+    <div class="voitto" id="voitto" style="display: none;">
+        <p class="pisteet" id="voittaja"></p>
+        <p class="pisteet" style="padding: 10px;">voitti pelin!</p>
+    </div>
+
+    <div class="yksinoppa" id="yksinoppa" style="display: none;">
+        <h1>Pelimuoto: Yksi Noppa</h1>
+        <p style="font-size: 30px;">Kenen vuoro? : <span class="vuoro" id="vuoro"></span></p>
+        <div class="pisteetosio">
+            <p id="pisteetnimi1" class="pisteet"> <span id="pisteet1" class="pisteet">0</span></p>
+            <p id="pisteetnimi2" class="pisteet"> <span id="pisteet2" class="pisteet">0</span></p>
+        </div>
+        <center>
+        <div class="noppa">
+            <img src="dice1.png" id="noppa" width="132px" height="132px">
+        </div>
+        <p class="pisteet">Pisteitä kerätty: <span class="pisteet" id="pisteetkerätty">0</span></p>
+        <div class="peli1">
+            <button class="pelaa1" onclick="pelaa1()" style="color: white;">Pelaa</button>
+            <button class="vuoro1" onclick="vuoro1()" style="color: white;">Lopeta Vuoro</button>
+        </div>
+        </center>
+    </div>
+
+    <div class="kaksinoppaa" id="kaksinoppaa" style="display: block;">
+        <h1>Pelimuoto: Kaksi noppaa</h1>    
+        <p style="font-size: 30px;">Kenen vuoro? : <span class="vuoro" id="vuoro2"></span></p>
+        <div class="pisteetosio">
+            <p id="pisteetnimi3" class="pisteet"> <span id="pisteet3" class="pisteet">0</span></p>
+            <p id="pisteetnimi4" class="pisteet"> <span id="pisteet4" class="pisteet">0</span></p>
+        </div>
+        <center>
+        <div class="nopat">
+            <div class="noppa">
+                <img src="dice1.png" id="noppa1" width="132px" height="132px">
+            </div>
+            <div class="noppa">
+                <img src="dice1.png" id="noppa2" width="132px" height="132px">
+            </div>
+        </div>
+        <p class="pisteet">Pisteitä kerätty: <span class="pisteet" id="pisteetkerätty2">0</span></p>
+        <div class="peli1">
+                <button class="pelaa1" onclick="pelaa2()" style="color: white;">Pelaa</button>
+                <button class="vuoro1" onclick="vuoro2()" style="color: white;">Lopeta Vuoro</button>
+            </div>
+        </center>
+    </div>
+</body>
+<script src="koodi.js"></script>
+</html>
